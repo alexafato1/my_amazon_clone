@@ -1,12 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .header {
     background-color: #131921;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 100vmax;
     justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 100;
+    
 }
 
 .header_logo{
@@ -34,10 +39,10 @@
 .header_searchInput{
     
     padding: 0.8rem;
-    min-width: 30vw;
+    min-width: 40vw;
     
     border: none;
-    border-radius: 10px;;
+    border-radius: 10px;
 }
 
 
@@ -53,10 +58,10 @@
    padding:  0 0.5em;
 }
 
-.header_option>spam:first-child{
+.header_option>span:first-child{
     font-size: 0.8rem;
 }
-.header_option>spam:nth-child(2){
+.header_option>span:nth-child(2){
     font-weight: 600;
 }
 

@@ -6,7 +6,7 @@ import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 
 function Header() {
     return (
-        <nav className='header'>
+        <div className='header'>
             {/* logo on the left */}
             <Link to='/'>
             <img className="header_logo"
@@ -23,36 +23,36 @@ function Header() {
             <div className='header_nav'>
                <Link  to='/login' className='header_link' >
                     <div className='header_option'>
-                            <spam>Hello,</spam>
-                            <spam>Sign in</spam>
+                            <span>Hello,</span>
+                            <span>Sign in</span>
                      </div>
                 </Link>
                
                 <Link  to='/' className='header_link' >
                     <div className='header_option'>
-                            <spam>Returms</spam>
-                            <spam>& Orders</spam>
+                            <span>Returms</span>
+                            <span>& Orders</span>
                      </div>
                 </Link>
                 
                 <Link  to='/' className='header_link' >
                     <div className='header_option'>
-                            <spam>Your</spam>
-                            <spam>Prime</spam>
+                            <span>Your</span>
+                            <span>Prime</span>
                      </div>
                 </Link>
                
                 <Link  to='/checkout'  >
                     <div className='header_optionBasket'>
                             <ShoppingBasketIcon />
-                            <spam className='header_basketCount'>0</spam>
+                            <span className='header_basketCount'>0</span>
                      </div>
                 </Link>
                
             </div>
 
             
-        </nav>
+        </div>
     )
 }
 
