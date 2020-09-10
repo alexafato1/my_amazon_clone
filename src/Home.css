@@ -1,7 +1,29 @@
+.home{
 
+ width: 100vmax;
+ 
+}
+
+.home_row{
+  display: flex;
+  justify-content: space-around;
+  margin:0 0.5rem;
+}
+
+.home_rowFirst{
+  display: flex;
+  justify-content: space-around;
+  margin:-22rem 0.5rem 0 0.5rem;
+
+}
  
 .home_image{
   display: flex;;
-  width: 95vmax;
   margin: 0 auto;
+ position: relative;
+object-fit: cover;
+ width: 98vmax;
+ height: fit-content;
+ z-index: -4;
+ 
 }

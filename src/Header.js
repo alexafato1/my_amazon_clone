@@ -3,9 +3,11 @@ import './Header.css';
 import {Link} from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 function Header() {
     return (
+        <div>
         <div className='header'>
             {/* logo on the left */}
             <Link to='/'>
@@ -50,8 +52,54 @@ function Header() {
                 </Link>
                
             </div>
-
+              
             
+        </div>
+        <div className='header_baner'>
+        <Link  to='/' className='header_link' >
+        <LocationOnIcon/>
+                    <div className='header_option'>
+                     
+                           <span>Deliver to</span>
+                            <span>Russian Federation</span>
+                     </div>
+                </Link>
+               
+                <Link  to='/' className='header_link' >
+                    <div className='header_optionSecond'>
+                            <span>Today's Deals</span>
+                            
+                     </div>
+                </Link>
+                
+                <Link  to='/' className='header_link' >
+                    <div className='header_optionSecond'>
+                            <span>Customer Service</span>
+                            
+                     </div>
+                </Link>
+                <Link  to='/' className='header_link' >
+                    <div className='header_optionSecond'>
+                            <span>Gifts Card</span>
+                            
+                     </div>
+                </Link>
+                
+                <Link  to='/' className='header_link' >
+                    <div className='header_optionSecond'>
+                            <span>Registry</span>
+                            
+                     </div>
+                </Link>
+                <Link  to='/' className='header_link' >
+                    <div className='header_optionSecond'>
+                            <span>Sell</span>
+                            
+                     </div>
+                </Link>
+               
+               
+        </div>
         </div>
     )
 }
