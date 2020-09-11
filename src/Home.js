@@ -14,7 +14,7 @@ function Home() {
         id='5456789909'
          title='1000 places to see before you die' 
          image='https://www.bigw.com.au/medias/sys_master/images/images/h84/hde/14666415538206.jpg'
-         price={5}
+         price={25}
           rating={5}
         />
 
@@ -22,7 +22,7 @@ function Home() {
         id='5456789909'
          title='1000 places to see before you die' 
          image='https://www.bigw.com.au/medias/sys_master/images/images/h84/hde/14666415538206.jpg'
-         price={5}
+         price={59}
           rating={5}
         />
        

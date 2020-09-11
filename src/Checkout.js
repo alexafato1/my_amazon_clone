@@ -1,12 +1,14 @@
 import React from 'react';
 import './Checkout.css';
 import {useStateValue} from './StateProvider';
-import CheckoutProduct from './CheckoutProduct'
+import CheckoutProduct from './CheckoutProduct';
+import Subtotal from './Subtotal.js';
 
 function Checkout() {
     const [{ basket }] = useStateValue();
     return (
         <div className='checkout'>
+        <div className='checkout_left'>
            
          {basket?.length === 0 ? (
              <div className='checkout_title'>
@@ -18,19 +20,28 @@ function Checkout() {
          ) : (
             <div>
                 <h2 className='checkout_title'>Your Shoping Basket</h2>
-                {basket.map(item =>(
+                {basket?.map(item =>(
+                    
                   <CheckoutProduct
-                     item={item.id}
+                     id={item.id}
                      title={item.title}
                      image={item.image}
                      price={item.price}
                      rating={item.rating}
                   />
                 ))}
-              
+              </div>
+             )}
+           </div>
+           {basket.length > 0  && (
+            <div className ='heckout_subtotal'>
+                <h2>Subtotal:</h2>
+                 <Subtotal/>
             </div>
-         )}
+             
+           )}
         </div>
+        
     )
 }
 

@@ -1,8 +1,12 @@
+.checkout{
+   display: flex;
+   
+}
 .checkout_add{
     width: 100%;
     
 }
-
+.heckout_subtotal,
 .checkout_title{
     padding: 1rem;
 }
