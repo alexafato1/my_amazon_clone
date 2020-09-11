@@ -52,7 +52,8 @@ function Home() {
          price={5}
           rating={5}
         />
-          
+                
+       
 
         </div>
         </div>
