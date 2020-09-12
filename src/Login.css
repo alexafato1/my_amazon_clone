@@ -1,0 +1,55 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: white;
+    align-items: center;
+}
+
+.login_container{
+   width: 280px;
+   padding: 1rem 3rem 2rem 3rem;
+  
+   border: 1px solid lightgrey;
+  
+}
+
+.login_logo {
+  width: 130px;
+  object-fit: contain;
+}
+
+.login_container input{
+  width: 100%;
+  padding: 0.5rem 0;
+  margin-bottom: 0.3rem;
+  
+}
+.login_container h1{
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.login_container h5{
+  margin-bottom: 0.3em;
+}
+
+.login_container p,
+.login_container button{
+  margin-top: 1em;
+  width:100%
+}
+
+.login_signButton{
+  background: #f0c14b;
+  padding: 0.5rem;
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+
+.login_regicterButton{
+  background: darkgray;
+  padding: 0.5rem;
+  border: 1px solid grey;
+  border-radius: 3px;
+}
