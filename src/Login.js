@@ -18,6 +18,7 @@ function Login() {
      })
      .catch(e => alert(e.message));
    }
+   
    const register = (event) => {
     event.preventDefault();
 
